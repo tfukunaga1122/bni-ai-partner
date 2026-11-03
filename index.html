@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="BNIメンバー向け。中小企業向けAI活用研修の販売パートナー募集。受講者1名のご紹介ごとに営業手数料10万円（税別）。カリキュラム・講師・開催の運営は株式会社ハウスインフォが用意します。">
+<meta property="og:title" content="AI活用研修 販売パートナー募集（BNIメンバー限定）">
+<meta property="og:description" content="受講者1名のご紹介ごとに営業手数料10万円（税別）。カリキュラム・講師・開催の運営は当社が用意します。まずは30分の個別説明から。">
+<meta property="og:type" content="website">
+<title>AI活用研修 販売パートナー募集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500;700;900&family=BIZ+UDPGothic:wght@400;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: 1カラムの縦読み。紹介カード（リファーラル票）風の枠で「当社が揃えるもの」と「パートナーの役割」を対比させる */
+:root{
+  --paper:#f2f4f6;
+  --sheet:#ffffff;
+  --ink:#16212c;
+  --muted:#58626e;
+  --line:#d3d9e0;
+  --cobalt:#2443c4;
+  --cobalt-soft:#e4e9fb;
+  --marigold:#f2b632;
+  --warn-bg:#fff6e0;
+  --warn-ink:#6b4a00;
+  --f-display:"Zen Kaku Gothic Antique","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#11171d;--sheet:#19222b;--ink:#e8edf2;--muted:#a3adb8;--line:#2e3a46;
+  --cobalt:#8ea4ff;--cobalt-soft:#1f2a4d;--marigold:#f2b632;--warn-bg:#2d2512;--warn-ink:#f3d58c;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#11171d;--sheet:#19222b;--ink:#e8edf2;--muted:#a3adb8;--line:#2e3a46;
+  --cobalt:#8ea4ff;--cobalt-soft:#1f2a4d;--marigold:#f2b632;--warn-bg:#2d2512;--warn-ink:#f3d58c;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;margin:0}
+.wrap{max-width:880px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+section{padding-block:64px;border-top:1px solid var(--line)}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.35}
+h2{font-size:clamp(24px,4.4vw,34px);font-weight:900;margin-bottom:24px}
+h3{font-size:19px;font-weight:700}
+p{margin:0;max-width:40em}
+.eyebrow{font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.14em;color:var(--cobalt);margin-bottom:10px;display:block}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.stack{display:flex;flex-direction:column;gap:16px}
+a{color:var(--cobalt)}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px}
+
+/* Hero */
+.hero{padding-block:56px 64px;border-top:none}
+.badge{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;border:1.5px solid var(--ink);padding:4px 12px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-size:clamp(34px,7.4vw,64px);font-weight:900;letter-spacing:-.01em}
+.hero h1 mark{background:linear-gradient(transparent 62%,var(--marigold) 62%);color:inherit;padding:0 .05em}
+.hero .lead{font-size:18px;margin-top:22px;color:var(--muted)}
+.hero .lead strong{color:var(--ink)}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
+.btn{display:inline-block;background:var(--cobalt);color:#fff;font-family:var(--f-display);font-weight:700;font-size:17px;text-decoration:none;padding:15px 26px;border-radius:6px;border:none;cursor:pointer}
+:root[data-theme="dark"] .btn{color:#0d1424}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn{color:#0d1424}}
+.btn:hover{filter:brightness(1.08)}
+.cta-note{font-size:14px;color:var(--muted)}
+.nb{display:inline-block}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+.facts>div{background:var(--sheet);border:1px solid var(--line);border-left:4px solid var(--cobalt);border-radius:6px;padding:14px 16px;min-width:0}
+.facts b{display:block;font-family:var(--f-num);font-weight:600;font-size:26px;line-height:1.3}
+.facts b small{font-family:var(--f-body);font-size:14px;font-weight:700;margin-left:2px}
+.facts span{display:block;font-size:13px;color:var(--muted);line-height:1.6}
+.cta-mid{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* Split card: 当社 vs パートナー */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:40px;background:var(--sheet);border:1.5px solid var(--ink);border-radius:8px;overflow:hidden}
+.split>div{padding:22px 24px;min-width:0}
+.split>div+div{border-left:1.5px dashed var(--ink)}
+.split h3{font-size:15px;letter-spacing:.06em;margin-bottom:10px}
+.split ul{margin:0;padding-left:1.2em}
+.split .you{background:var(--cobalt-soft)}
+
+/* Pain list */
+.pains{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pain{background:var(--sheet);border:1px solid var(--line);border-radius:6px;padding:20px;min-width:0}
+.pain .who{font-size:13px;color:var(--muted);font-family:var(--f-display);font-weight:700}
+.pain p{margin-top:6px}
+
+/* Strengths */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px 36px}
+.grid2>div{min-width:0}
+.grid2 h3{margin-bottom:6px;padding-top:12px;border-top:3px solid var(--ink)}
+
+/* Spec table */
+.spec{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1.5px solid var(--ink);border-radius:8px;background:var(--sheet);overflow:hidden}
+.spec>div{padding:18px 20px;min-width:0}
+.spec>div+div{border-left:1px solid var(--line)}
+.spec dt{font-size:13px;color:var(--muted);font-family:var(--f-display);font-weight:700}
+.spec dd{margin:4px 0 0;font-size:26px;font-weight:600}
+.spec dd small{font-size:14px;font-family:var(--f-body);font-weight:400;color:var(--muted)}
+
+/* Earnings */
+.earn{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.earn-card{background:var(--sheet);border:1px solid var(--line);border-radius:8px;padding:24px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.earn-card.main{border:2px solid var(--cobalt)}
+.earn-card .amount{font-family:var(--f-num);font-weight:600;font-size:44px;line-height:1.1}
+.earn-card .amount span{font-family:var(--f-body);font-size:16px;font-weight:700;margin-left:4px}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{padding:8px 4px;border-bottom:1px solid var(--line);text-align:left}
+td.r,th.r{text-align:right;font-family:var(--f-num);font-variant-numeric:tabular-nums}
+tr.total td{font-weight:700;border-bottom:none}
+.fine{font-size:13px;color:var(--muted)}
+
+/* Ongoing */
+.ongoing{background:var(--ink);color:var(--paper);border-radius:10px;padding:32px 28px}
+.ongoing h2{color:var(--paper)}
+.ongoing .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ongoing .pills span{border:1px solid var(--paper);border-radius:999px;padding:4px 14px;font-size:14px}
+
+/* Partners */
+.prio{display:flex;flex-direction:column;gap:0;border-top:1.5px solid var(--ink)}
+.prio li{display:grid;grid-template-columns:7.5em 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.prio li>*{min-width:0}
+.prio ol{list-style:none;margin:0;padding:0}
+.prio .k{font-family:var(--f-display);font-weight:700}
+
+/* Flow */
+.flow{list-style:none;margin:0;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:0}
+.flow li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.flow li::before{content:counter(s);font-family:var(--f-num);font-weight:600;font-size:15px;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center}
+.flow li>div{min-width:0}
+.flow .who{font-size:12px;font-weight:700;font-family:var(--f-display);padding:1px 8px;border-radius:4px;margin-left:6px;vertical-align:2px}
+.flow .hq{background:var(--cobalt-soft);color:var(--cobalt)}
+.flow .pt{background:var(--marigold);color:#2a1f00}
+
+/* Rules */
+.rules{background:var(--warn-bg);color:var(--warn-ink);border:1.5px solid currentColor;border-radius:8px;padding:26px 26px}
+.rules h2{color:var(--warn-ink)}
+.rules ol{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:12px}
+.rules strong{color:inherit}
+
+/* FAQ */
+details{border-bottom:1px solid var(--line);padding:4px 0}
+summary{cursor:pointer;font-family:var(--f-display);font-weight:700;font-size:17px;padding:14px 0;list-style:none;display:grid;grid-template-columns:2em 1fr 1.4em;gap:6px}
+summary::-webkit-details-marker{display:none}
+summary .q{color:var(--cobalt);font-family:var(--f-num)}
+summary::after{content:"+";font-family:var(--f-num);text-align:right}
+details[open] summary::after{content:"−"}
+details .a{padding:0 0 18px 2.4em;color:var(--ink)}
+
+.kicker{font-family:var(--f-display);font-weight:900;font-size:clamp(18px,3vw,22px);color:var(--cobalt);margin:0 0 12px}
+.kicker sup{font-size:.6em}
+.bridge{margin-top:28px;background:var(--sheet);border:1.5px solid var(--ink);border-radius:8px;padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.bridge-flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--f-display);font-weight:700;max-width:none}
+.bridge-flow span{border:1px solid var(--line);border-radius:999px;padding:4px 14px}
+.bridge-flow span.on{background:var(--cobalt);border-color:var(--cobalt);color:var(--sheet)}
+.bridge-flow b{color:var(--muted)}
+/* Contact */
+.contact{margin:0;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.contact>div{display:grid;grid-template-columns:5em 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.contact dt{font-family:var(--f-display);font-weight:700;color:var(--muted)}
+.contact dd{margin:0;min-width:0;font-size:18px;user-select:all}
+.contact dd:first-of-type{user-select:text}
+/* Final CTA */
+.final{text-align:left}
+.final .box{background:var(--sheet);border:1.5px solid var(--ink);border-radius:10px;padding:32px 28px;display:flex;flex-direction:column;gap:16px}
+.final ul{margin:0;padding-left:1.2em}
+footer{padding-block:32px 48px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+
+@media (max-width:640px){
+  section{padding-block:48px}
+  .split,.grid2,.earn,.pains,.spec,.facts{grid-template-columns:1fr}
+  .facts{gap:8px}
+  .facts>div{display:grid;grid-template-columns:7.2em 1fr;align-items:center;gap:10px;padding:10px 14px}
+  .facts b{font-size:22px}
+  .earn-card .amount{font-size:34px}
+  .earn-card .amount span{font-size:14px}
+  .split>div+div{border-left:none;border-top:1.5px dashed var(--ink)}
+  .spec>div+div{border-left:none;border-top:1px solid var(--line)}
+  .prio li{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 mark{background-size:100% 100%}
+}
+</style>
+
+</head>
+<body>
+<main>
+<!-- ① ファーストビュー -->
+<div class="wrap">
+  <header class="hero">
+    <span class="badge">BNIメンバー限定のご案内</span>
+    <p class="kicker"><span class="nb">取り組んだ翌月から、</span><span class="nb">売上になる事業です。<sup>※</sup></span></p>
+    <h1><span class="nb">AIの仕事を、</span><br><span class="nb"><mark>「売る」</mark>ことから</span><span class="nb">始めませんか。</span></h1>
+    <p class="lead">中小企業向け「AI活用研修」の<strong>販売パートナー</strong>を、全国のBNIメンバーから募集しています。カリキュラム・講師・開催の運営は、株式会社ハウスインフォが用意します。パートナーの皆さまは、<strong>企業へのご紹介</strong>に集中していただけます。</p>
+    <div class="facts">
+      <div><b>100,000<small>円</small></b><span>受講者1名のご紹介ごとの営業手数料（税別）</span></div>
+      <div><b>5<small>社中</small>5<small>社</small></b><span>当社がAI事業の立ち上げ1か月目に即決で契約</span></div>
+      <div><b>0<small>円</small></b><span>研修後のコンサル・顧問契約にかかる当社の手数料</span></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn" href="#contact">30分の個別説明を申し込む</a>
+      <span class="cta-note">オンラインで30分。売り込みはしません。</span>
+    </div>
+    <p class="fine" style="margin-top:14px">※成約の翌月に報酬をお支払いする前提です。支払条件はパートナー契約で定めます。</p>
+
+    <div class="split" aria-label="役割分担">
+      <div>
+        <h3>当社が用意するもの</h3>
+        <ul>
+          <li>職種別3コースのカリキュラム</li>
+          <li>講師のラインナップ</li>
+          <li>複数社合同の開催スケジュール</li>
+          <li>営業用チラシ（2種類）</li>
+        </ul>
+      </div>
+      <div class="you">
+        <h3>パートナーの役割</h3>
+        <ul>
+          <li>取引先・知人の企業へのご紹介</li>
+          <li>経営者へのご案内と申込の取りまとめ</li>
+          <li>（希望者のみ）講師・受講後のコンサル</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ② 共感・問題提起 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">こんな状況はありませんか</span>
+    <h2><span class="nb">「AIの相談」は多い。</span><br><span class="nb">でも、コンサル契約までが遠い。</span></h2>
+    <div class="pains">
+      <div class="pain"><span class="who">いきなり顧問契約は重い</span><p>経営者は興味があっても、毎月のコンサル費をいきなり決めるのはハードルが高いもの。「まずは様子を見たい」で止まります。</p></div>
+      <div class="pain"><span class="who">何を頼めばよいか分からない</span><p>社内にAIを使える人がいないと、企業側も相談の中身を決められず、提案がかみ合いません。</p></div>
+      <div class="pain"><span class="who">単発の相談で終わる</span><p>無償のアドバイスや一度きりの説明で終わり、次の仕事につながりません。</p></div>
+    </div>
+    <div class="bridge">
+      <p class="bridge-flow"><span>AIの相談</span><b aria-hidden="true">→</b><span class="on">AI活用研修</span><b aria-hidden="true">→</b><span>コンサル・顧問・サブスク</span></p>
+      <p>研修は、その間をつなぐ<strong>入口</strong>になります。社員が担当業務でAIを使う知識・技能を身につけると、企業は「次に何を頼むか」を自分で言えるようになります。研修のご紹介で企業とつながれば、受講後の相談先として、自然に次の提案ができます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 解決策：仕組み -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">売るための材料と仕組みは、すでに揃っています</span>
+    <h2><span class="nb">立ち上げに必要なものは、</span><span class="nb">当社がすべて用意します</span></h2>
+    <div class="grid2">
+      <div><h3>カリキュラム</h3><p>事務・営業・企画マーケティングの職種別3コースを用意しています。どのコースも、受講者の担当業務を題材に、AIを使いこなす知識と技能を身につける内容です。</p></div>
+      <div><h3>講師</h3><p>カリキュラムに対応した講師を確保しています。</p></div>
+      <div><h3>開催スケジュール</h3><p>複数社合同で開催するため、1社あたりの受講者が少なくても開催できます。</p></div>
+      <div><h3>営業ツール</h3><p>企業への案内に使うチラシや資料は当社が用意します。一から資料を作る必要はありません。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 実績 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">当社の実績</span>
+    <h2><span class="nb">AI事業部がない状態から、</span><span class="nb">1か月目で5社と契約しました</span></h2>
+    <dl class="spec">
+      <div><dt>AI事業の立ち上げから</dt><dd class="num">1<small>か月目</small></dd></div>
+      <div><dt>営業した企業</dt><dd class="num">5<small>社</small></dd></div>
+      <div><dt>即決で契約した企業</dt><dd class="num">5<small>社</small></dd></div>
+    </dl>
+    <div class="grid2" style="margin-top:32px">
+      <div><h3>助成金の対象なので、企業が決めやすい</h3><p>人材開発支援助成金（事業展開等リスキリング支援コース）の対象で、中小企業は受講料の75%が助成されます（審査あり）。費用の話で止まりにくく、提案が通りやすい研修です。</p></div>
+      <div><h3>準備はすべて当社側で行う</h3><p>助成金の書類の準備、カリキュラム、講師、開催日程は当社側で用意します。パートナーが手続きに関わる必要はありません。皆さまにも、当社と同じ仕組みで販売していただけます。</p></div>
+    </div>
+    <p class="fine" style="margin-top:16px">助成は審査のうえ決定され、受給を確約するものではありません。受講企業へのご案内は、下の「必須ルール」に沿って行ってください。</p>
+  </div>
+</section>
+
+<!-- ④ 商品概要 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">販売していただく研修</span>
+    <h2>AI活用研修（職種別3コース）</h2>
+    <dl class="spec">
+      <div><dt>受講料</dt><dd class="num">400,000<small>円（税別）／1名</small></dd></div>
+      <div><dt>1コースの構成</dt><dd class="num">2<small>時間</small> × 6<small>回</small></dd></div>
+      <div><dt>総時間</dt><dd class="num">12<small>時間</small></dd></div>
+    </dl>
+    <p class="fine" style="margin-top:12px">コースは事務・営業・企画マーケティングの3種類です。オンライン（双方向）または対面で実施します。開催日程・定員は個別説明の際にご案内します。</p>
+  </div>
+</section>
+
+<!-- ⑤ 報酬 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">パートナーの報酬</span>
+    <h2><span class="nb">受講者1名のご紹介ごとに、</span><span class="nb">報酬をお支払いします</span></h2>
+    <div class="earn">
+      <div class="earn-card main">
+        <span class="k" style="font-family:var(--f-display);font-weight:700">販売パートナー（全業種）</span>
+        <div class="amount">100,000<span>円／1名</span></div>
+        <p>ご紹介・営業で受講が決まった場合の営業手数料です（税別）。</p>
+      </div>
+      <div class="earn-card">
+        <span class="k" style="font-family:var(--f-display);font-weight:700">AI関連事業者（講師・ご自身のナレッジの研修）</span>
+        <div class="amount">最大190,000<span>円／1名</span></div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th></th><th class="r">講師も担当</th><th class="r">ナレッジの研修</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>営業手数料</td><td class="r">100,000</td><td class="r">100,000</td></tr>
+              <tr><td>講師料</td><td class="r">36,000</td><td class="r">36,000</td></tr>
+              <tr><td>ナレッジ料</td><td class="r">—</td><td class="r">54,000</td></tr>
+              <tr class="total"><td>合計（税別）</td><td class="r">136,000</td><td class="r">190,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fine">講師料は時給3,000円×12時間＝36,000円を、受講者1名ごとにお支払いします。同じ回の受講者が増えるほど、講師料も増えます。ナレッジ料は、GAS・SNS運用など講師ご自身の知識をもとにした研修が対象です。</p>
+      </div>
+    </div>
+    <p class="fine" style="margin-top:16px">報酬の支払時期・条件は、パートナー契約で定めます。</p>
+    <div class="cta-mid">
+      <a class="btn" href="#contact">30分の個別説明を申し込む</a>
+      <span class="cta-note">条件の詳細は個別説明でご案内します。</span>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ 継続収益 -->
+<section>
+  <div class="wrap">
+    <div class="ongoing">
+      <span class="eyebrow" style="color:var(--marigold)">研修は入口です</span>
+      <h2><span class="nb">受講後の仕事は、</span><span class="nb">全額ご自身の収入に</span></h2>
+      <p>研修を受けた企業は、次に「自社でどう使うか」を相談したくなります。その後のコンサルティング、顧問契約、サブスクリプションに、当社は手数料をいただきません。内容も料金もご自身で組み立て、全額をご自身の収入にできます。</p>
+      <div class="pills"><span>AI導入コンサル</span><span>顧問契約</span><span>ツール・サブスク提供</span><span>HP・業務システム改修</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ 対象 -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">こんな方を探しています</span>
+    <h2>特に相性がよい業種</h2>
+    <ol class="prio" style="list-style:none;margin:0;padding:0">
+      <li><span class="k">AI・HP制作</span><span>講師や、受講後のサブスク提供まで担っていただける方。報酬が最も大きくなります。</span></li>
+      <li><span class="k">社労士・税理士</span><span>顧問先が多く、人材育成や研修の話題を出しやすい方。</span></li>
+      <li><span class="k">ITサポート・OA機器</span><span>中小企業に定期的に出入りし、紹介の機会が多い方。</span></li>
+      <li><span class="k">経営コンサル・保険</span><span>経営者と直接話す機会が多い方。</span></li>
+    </ol>
+    <p class="fine" style="margin-top:14px">上記以外の業種の方も、紹介・販売パートナーとして歓迎します。</p>
+  </div>
+</section>
+
+<!-- ⑧ 流れ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">はじめるまでの流れ</span>
+    <h2><span class="nb">個別説明から</span><span class="nb">報酬のお支払いまで</span></h2>
+    <ol class="flow">
+      <li><div><h3>個別説明<span class="who hq">当社</span></h3><p>オンライン30分で、仕組み・報酬・販売ルールをご説明します。</p></div></li>
+      <li><div><h3>パートナー契約<span class="who hq">当社</span><span class="who pt">パートナー</span></h3><p>報酬額・支払時期・販売ルールを契約書で取り決めます。</p></div></li>
+      <li><div><h3>営業ツールの受け取り<span class="who hq">当社</span></h3><p>当社が用意した営業用チラシをお渡しします。</p></div></li>
+      <li><div><h3>企業へのご紹介<span class="who pt">パートナー</span></h3><p>取引先や知人の企業に研修をご案内し、申込を取りまとめます。</p></div></li>
+      <li><div><h3>開催<span class="who hq">当社</span></h3><p>講師の手配と、複数社合同での開催を当社が行います。</p></div></li>
+      <li><div><h3>報酬のお支払い<span class="who hq">当社</span></h3><p>契約で定めた時期にお支払いします。受講後のコンサルなどは、ご自身の事業として進めてください。</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ⑨ 販売ルール -->
+<section>
+  <div class="wrap">
+    <div class="rules">
+      <span class="eyebrow" style="color:var(--warn-ink)">必ずお読みください</span>
+      <h2>販売パートナーの必須ルール</h2>
+      <ol>
+        <li><strong>研修の案内と、助成金の案内は、必ず別々のツールで行ってください。</strong>「助成金を使って研修が受けられる」と一枚で分かるチラシ・投稿・資料は作成できません。「助成金が使えます」「申請サポート対応」といった表現も使えません。</li>
+        <li><strong>営業ツールは当社が用意するものを使ってください。</strong>独自のチラシや資料を作る場合は、配布前に必ず当社の確認を受けてください。</li>
+        <li><strong>助成の可否・金額を約束しないでください。</strong>助成は審査のうえ決定されます。「必ずもらえる」「実質○円」「無料」など、確約や助成金が主役と受け取られる表現は使えません。助成金の手続きは受講企業が行い、出欠の管理と書類の準備は研修の運営会社（株式会社S.B.C）がサポートします。</li>
+        <li><strong>報酬の一部を受講企業に還元しないでください。</strong>キャッシュバックや値引きは、受講企業が助成を受けられなくなる原因になります。</li>
+        <li><strong>BNI内での告知は、所属チャプター・リージョンのルールに沿って行ってください。</strong></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ⑩ FAQ -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">よくあるご質問</span>
+    <h2>FAQ</h2>
+    <div>
+      <details><summary><span class="q">Q</span><span>AIに詳しくなくても販売できますか。</span></summary><p class="a">はい。研修の内容は講師が担当します。パートナーは、AI導入に関心のある企業をご紹介いただくことが役割です。説明に使う資料は当社が用意します。</p></details>
+      <details><summary><span class="q">Q</span><span>助成金の説明は自分でする必要がありますか。</span></summary><p class="a">ありません。助成金の手続きは受講企業が行い、出欠の管理と書類の準備は研修の運営会社（株式会社S.B.C）がサポートします。パートナーは申請に関与せず、助成の可否や金額も約束しないでください。助成は審査のうえ決定されます。</p></details>
+      <details><summary><span class="q">Q</span><span>自分でチラシやSNS投稿を作ってもよいですか。</span></summary><p class="a">作成は可能ですが、配布・投稿の前に必ず当社の確認を受けてください。研修と助成金を一つのツールでまとめて案内することはできません。</p></details>
+      <details><summary><span class="q">Q</span><span>報酬はいつ支払われますか。</span></summary><p class="a">支払時期と条件はパートナー契約で定めます。個別説明の際に具体的にご案内します。</p></details>
+      <details><summary><span class="q">Q</span><span>1社あたり何名から受講できますか。</span></summary><p class="a">複数社を集めて合同で開催するため、少人数の企業でも参加しやすい形です。日程と定員は個別説明の際にご案内します。</p></details>
+      <details><summary><span class="q">Q</span><span>講師や、自分の知識をもとにした研修も担当できますか。</span></summary><p class="a">主にAI関連の事業者の方を想定しています。講師を担当すると、営業手数料に加えて講師料（受講者1名あたり36,000円）をお支払いします。GAS・SNS運用など、ご自身の知識をもとにした研修は、ナレッジ料（受講者1名あたり54,000円）も加わります。研修は決まったパッケージで提供するため、講師の担当や新しい研修は、当社が内容を確認したうえでご相談します。詳しくは個別説明でお聞きください。</p></details>
+      <details><summary><span class="q">Q</span><span>研修後のコンサルや顧問契約に、手数料はかかりますか。</span></summary><p class="a">かかりません。受講後のコンサルや顧問契約は、研修とは別の、ご自身の事業です。全額をご自身の収入にしていただけます。</p></details>
+      <details><summary><span class="q">Q</span><span>BNIのチャプター内で告知してもよいですか。</span></summary><p class="a">所属チャプター・リージョンの運用ルールに沿ってください。判断に迷う場合は、事前に当社へご相談ください。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ⑪ 最終CTA -->
+<section id="contact" class="final">
+  <div class="wrap">
+    <div class="box">
+      <span class="eyebrow">まずは30分、話を聞いてみませんか</span>
+      <h2 style="margin-bottom:0">個別説明のお申し込み</h2>
+      <ul>
+        <li>オンラインで30分</li>
+        <li>仕組み、報酬、販売ルールをご説明します</li>
+        <li>その場での契約はありません</li>
+      </ul>
+      <dl class="contact">
+        <div><dt>担当</dt><dd>福永 拓光<br><span class="nb">株式会社ハウスインフォ</span>／<span class="nb">BNI REALIZEチャプター</span></dd></div>
+        <div><dt>電話</dt><dd class="num"><a href="tel:0792263714">079-226-3714</a></dd></div>
+        <div><dt>メール</dt><dd class="num"><a href="mailto:info@houseinfo.jp?subject=%E8%B2%A9%E5%A3%B2%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC%E5%80%8B%E5%88%A5%E8%AA%AC%E6%98%8E%E3%81%AE%E7%94%B3%E8%BE%BC">info@houseinfo.jp</a></dd></div>
+      </dl>
+      <p class="fine">メールの件名に「販売パートナー個別説明の申込」とお書きのうえ、ご都合のよい日時を2〜3候補お知らせください。お電話でも受け付けています。</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>お問い合わせ窓口：株式会社ハウスインフォ（担当 福永拓光）　TEL 079-226-3714　info@houseinfo.jp</p>
+    <p>本ページはBNIメンバー向けの販売パートナー募集のご案内です。受講企業向けの資料ではありません。</p>
+  </div>
+</footer>
+</body>
+</html>
