@@ -11,30 +11,30 @@
 <title>AI活用研修 販売パートナー募集</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500;700;900&family=BIZ+UDPGothic:wght@400;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
 <style>
-/* Layout: 1カラムの縦読み。紹介カード（リファーラル票）風の枠で「当社が揃えるもの」と「パートナーの役割」を対比させる */
+/* Layout: 1カラムの縦読み。BNI Japanのサイトの配色（白地・赤のアクセント・濃いグレーの文字）と、角丸の赤いボタン・赤い帯にそろえる。ロゴは使わない */
 :root{
-  --paper:#f2f4f6;
+  --paper:#f5f7f7;
   --sheet:#ffffff;
-  --ink:#16212c;
-  --muted:#58626e;
-  --line:#d3d9e0;
-  --cobalt:#2443c4;
-  --cobalt-soft:#e4e9fb;
-  --marigold:#f2b632;
-  --warn-bg:#fff6e0;
-  --warn-ink:#6b4a00;
-  --f-display:"Zen Kaku Gothic Antique","Hiragino Sans","Yu Gothic",sans-serif;
-  --f-body:"BIZ UDPGothic","Hiragino Sans","Yu Gothic",sans-serif;
-  --f-num:"IBM Plex Mono",ui-monospace,monospace;
+  --ink:#333333;
+  --muted:#63666a;
+  --line:#dcdddb;
+  --cobalt:#cf2030;
+  --cobalt-soft:#fdeef0;
+  --marigold:#f7c3c8;
+  --warn-bg:#fff5f6;
+  --warn-ink:#8a1420;
+  --f-display:"Noto Sans JP","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+  --f-body:"Noto Sans JP","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3",Meiryo,sans-serif;
+  --f-num:"Helvetica Neue",Arial,"Noto Sans JP",sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#11171d;--sheet:#19222b;--ink:#e8edf2;--muted:#a3adb8;--line:#2e3a46;
-  --cobalt:#8ea4ff;--cobalt-soft:#1f2a4d;--marigold:#f2b632;--warn-bg:#2d2512;--warn-ink:#f3d58c;color-scheme:dark}}
+  --paper:#161616;--sheet:#222222;--ink:#eeeeee;--muted:#b0b3b6;--line:#3a3a3a;
+  --cobalt:#ff5c6c;--cobalt-soft:#3a1c20;--marigold:#ff8a96;--warn-bg:#2a1517;--warn-ink:#ffb3bb;color-scheme:dark}}
 :root[data-theme="dark"]{
-  --paper:#11171d;--sheet:#19222b;--ink:#e8edf2;--muted:#a3adb8;--line:#2e3a46;
-  --cobalt:#8ea4ff;--cobalt-soft:#1f2a4d;--marigold:#f2b632;--warn-bg:#2d2512;--warn-ink:#f3d58c;color-scheme:dark}
+  --paper:#161616;--sheet:#222222;--ink:#eeeeee;--muted:#b0b3b6;--line:#3a3a3a;
+  --cobalt:#ff5c6c;--cobalt-soft:#3a1c20;--marigold:#ff8a96;--warn-bg:#2a1517;--warn-ink:#ffb3bb;color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.85;margin:0}
@@ -54,7 +54,23 @@ a{color:var(--cobalt)}
 .hero{padding-block:56px 64px;border-top:none}
 .badge{display:inline-block;font-family:var(--f-display);font-weight:700;font-size:13px;letter-spacing:.08em;border:1.5px solid var(--ink);padding:4px 12px;border-radius:999px;margin-bottom:22px}
 .hero h1{font-size:clamp(34px,7.4vw,64px);font-weight:900;letter-spacing:-.01em}
-.hero h1 mark{background:linear-gradient(transparent 62%,var(--marigold) 62%);color:inherit;padding:0 .05em}
+.hero h1 mark{background:none;color:var(--cobalt);padding:0}
+.badge{background:var(--cobalt);color:#fff;border-color:var(--cobalt)}
+.hero{position:relative}
+.hero>*{position:relative;z-index:1}
+.hero::before{content:"";position:absolute;z-index:0;right:calc(-1 * max(16px,(100vw - 880px) / 2));top:0;width:min(42vw,380px);height:min(42vw,380px);background:var(--cobalt);opacity:.07;clip-path:polygon(100% 0,100% 100%,0 0)}
+.brandbar{background:var(--sheet);border-top:6px solid var(--cobalt);border-bottom:1px solid var(--line)}
+.brandbar .wrap{display:flex;align-items:center;gap:12px;min-height:56px;font-size:14px;flex-wrap:wrap}
+.brandbar .org{font-weight:900;font-size:17px;letter-spacing:.02em}
+.brandbar .sep{width:1px;height:20px;background:var(--line)}
+.brandbar .sub{color:var(--muted)}
+section h2::after{content:"";display:block;width:48px;height:4px;background:var(--cobalt);border-radius:2px;margin-top:14px}
+.ongoing h2::after{background:#fff}
+.btn::after{content:"\203A";font-size:1.3em;line-height:0;margin-left:.6em;vertical-align:-.08em}
+.btn{box-shadow:0 2px 0 rgba(0,0,0,.12)}
+footer{background:var(--cobalt);color:#fff;border-top:none}
+footer p{max-width:none}
+footer .disclaimer{margin-top:10px;font-size:12px;opacity:.9}
 .hero .lead{font-size:18px;margin-top:22px;color:var(--muted)}
 .hero .lead strong{color:var(--ink)}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:30px}
@@ -165,7 +181,7 @@ details .a{padding:0 0 18px 2.4em;color:var(--ink)}
 .final{text-align:left}
 .final .box{background:var(--sheet);border:1.5px solid var(--ink);border-radius:10px;padding:32px 28px;display:flex;flex-direction:column;gap:16px}
 .final ul{margin:0;padding-left:1.2em}
-footer{padding-block:32px 48px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer{padding-block:32px 48px;font-size:13px}
 
 @media (max-width:640px){
   section{padding-block:48px}
@@ -208,6 +224,7 @@ footer{padding-block:32px 48px;font-size:13px;color:var(--muted);border-top:1px 
 
 </head>
 <body>
+<div class="brandbar"><div class="wrap"><span class="org">株式会社ハウスインフォ</span><span class="sep" aria-hidden="true"></span><span class="sub">AI活用研修 販売パートナー募集</span></div></div>
 <main>
 <!-- ① ファーストビュー -->
 <div class="wrap">
@@ -500,6 +517,7 @@ footer{padding-block:32px 48px;font-size:13px;color:var(--muted);border-top:1px 
   <div class="wrap">
     <p>お問い合わせ窓口：株式会社ハウスインフォ（担当 福永拓光）　TEL 079-226-3714　info@houseinfo.jp</p>
     <p>本ページはBNIメンバー向けの販売パートナー募集のご案内です。受講企業向けの資料ではありません。</p>
+    <p class="disclaimer">本ページは株式会社ハウスインフォが運営しています。BNI・BNI Japanの公式ページではありません。</p>
   </div>
 </footer>
 
